@@ -107,5 +107,8 @@
       }
     }
   },
-  "defaultProject": "angular-shopping"
+  "defaultProject": "angular-shopping",
+  "cli": {
+    "analytics": false
+  }
 }
