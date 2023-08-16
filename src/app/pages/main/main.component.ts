@@ -14,7 +14,6 @@ export class MainComponent {
   constructor(private store: Store<{ items: ItemState }>) {}
 
   ngOnInit() {
-    this.store.dispatch(loadItems());
     this.store
       .select((state) => state.items)
       .subscribe((items) => {
