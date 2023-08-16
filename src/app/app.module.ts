@@ -1,26 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AdminComponent } from './admin/admin.component';
-import { ItemDetailComponent } from './item-detail/item-detail.component';
-import { HomeComponent } from './home/home.component';
-import { CartComponent } from './cart/cart.component';
+import { AdminComponent } from './pages/admin/admin.component';
+import { ItemDetailComponent } from './pages/item-detail/item-detail.component';
+import { CartComponent } from './pages/cart/cart.component';
+import { MainComponent } from './pages/main/main.component';
+import { ShopComponent } from './pages/shop/shop.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminComponent,
     ItemDetailComponent,
-    HomeComponent,
-    CartComponent
+    CartComponent,
+    MainComponent,
+    ShopComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

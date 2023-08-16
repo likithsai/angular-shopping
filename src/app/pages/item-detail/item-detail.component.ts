@@ -14,8 +14,4 @@ export class ItemDetailComponent {
       this.query = this.activeRoute.snapshot.params;
     });
   }
-
-  ngOnInit(): void {
-    console.log(this.query['id']);
-  }
 }
