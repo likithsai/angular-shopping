@@ -7,6 +7,11 @@ import { ItemDetailComponent } from './pages/item-detail/item-detail.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { MainComponent } from './pages/main/main.component';
 import { ShopComponent } from './pages/shop/shop.component';
+import { HttpClientModule } from '@angular/common/http';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreModule } from '@ngrx/store';
+import { appReducer } from './store/app.reducer';
+import { AppEffects } from './store/app.effects';
 
 @NgModule({
   declarations: [
@@ -17,7 +22,13 @@ import { ShopComponent } from './pages/shop/shop.component';
     MainComponent,
     ShopComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    StoreModule.forRoot({ items: appReducer }),
+    EffectsModule.forRoot([AppEffects]),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

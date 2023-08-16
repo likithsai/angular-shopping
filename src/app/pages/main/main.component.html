@@ -1,1 +1,5 @@
 <p>main works!</p>
+{{ productItems | json }}
+<ul>
+  <li *ngFor="let item of productItems.items">{{ item | json }}</li>
+</ul>
