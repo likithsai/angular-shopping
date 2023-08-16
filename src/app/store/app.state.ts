@@ -6,7 +6,7 @@ export interface Item {
 
 export interface ItemState {
   items: Item[];
-  cart: string[];
+  cart: Item[];
 }
 
 export const initialItemState: ItemState = {
