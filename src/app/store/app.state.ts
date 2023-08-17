@@ -1,13 +1,4 @@
-export interface Item {
-  id: string;
-  name: string;
-  price: number;
-}
-
-export interface ItemState {
-  items: Item[];
-  cart: Item[];
-}
+import { ItemState } from '../model/app.model';
 
 export const initialItemState: ItemState = {
   items: [],

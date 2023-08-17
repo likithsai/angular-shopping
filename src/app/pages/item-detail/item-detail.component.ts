@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Store } from '@ngrx/store';
-import { ItemState } from 'src/app/store/app.state';
+import { ItemState } from 'src/app/model/app.model';
 
 @Component({
   selector: 'app-item-detail',

@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { loadItems } from 'src/app/store/app.actions';
-import { Item, ItemState } from 'src/app/store/app.state';
+import { ItemState } from 'src/app/model/app.model';
 
 @Component({
   selector: 'app-main',
