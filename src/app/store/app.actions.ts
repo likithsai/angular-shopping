@@ -10,3 +10,16 @@ export const loadItemsFailure = createAction(
   '[Item] Load Items Failure',
   props<{ error: any }>()
 );
+
+// cart functionality
+export const addToCart = createAction(
+  '[Cart] Add item to cart',
+  props<{ cartItem: Item }>()
+);
+
+export const removeFromCart = createAction(
+  '[Cart] Remove Item From Cart',
+  props<{ cartId: string }>()
+);
+
+export const resetCart = createAction('[Cart] Clear from cart');
