@@ -1,11 +1,6 @@
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Item, ItemState } from 'src/app/model/app.model';
-import {
-  addToCart,
-  removeFromCart,
-  resetCart,
-} from 'src/app/store/app.actions';
+import { ItemState } from 'src/app/model/app.model';
 
 @Component({
   selector: 'app-main',
@@ -22,37 +17,5 @@ export class MainComponent {
       .subscribe((items) => {
         this.productItems = items;
       });
-
-    this.addToCart({
-      itemid: 'SKU1948750',
-      itemname: 'fancy product',
-      itemdesc:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi ultrices nunc blandit suscipit.',
-      itemcategoryname: 'software',
-      itemnewprice: 18.65,
-      itemoldprice: 20.0,
-    });
-
-    this.addToCart({
-      itemid: 'SKU1948751',
-      itemname: 'fancy product',
-      itemdesc:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi ultrices nunc blandit suscipit.',
-      itemcategoryname: 'software',
-      itemnewprice: 18.82,
-      itemoldprice: 20.0,
-    });
-  }
-
-  addToCart(item: Item) {
-    this.store.dispatch(addToCart({ cartItem: item }));
-  }
-
-  removeFromCart(itemId: string) {
-    this.store.dispatch(removeFromCart({ cartId: itemId }));
-  }
-
-  clearCart() {
-    this.store.dispatch(resetCart());
   }
 }

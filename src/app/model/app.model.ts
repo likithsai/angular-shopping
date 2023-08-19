@@ -6,6 +6,7 @@ export interface Item {
   itemcategoryname: string;
   itemnewprice: number;
   itemoldprice: number;
+  itemfilepath: string;
 }
 
 export interface productImages {
