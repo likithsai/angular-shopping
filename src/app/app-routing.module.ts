@@ -5,11 +5,20 @@ import { CartComponent } from './pages/cart/cart.component';
 import { ItemDetailComponent } from './pages/item-detail/item-detail.component';
 import { MainComponent } from './pages/main/main.component';
 import { ShopComponent } from './pages/shop/shop.component';
+import { AdminDashboardComponent } from './pages/admin/components/admin-dashboard/admin-dashboard.component';
+import { AdminProductsComponent } from './pages/admin/components/admin-products/admin-products.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
   { path: 'shop', component: ShopComponent },
-  { path: 'admin', component: AdminComponent },
+  {
+    path: 'admin',
+    component: AdminComponent,
+    children: [
+      { path: 'dashboard', component: AdminDashboardComponent },
+      { path: 'products', component: AdminProductsComponent },
+    ],
+  },
   { path: 'cart', component: CartComponent },
   { path: ':id', component: ItemDetailComponent },
 ];

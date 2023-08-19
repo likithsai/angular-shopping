@@ -12,6 +12,8 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 import { appReducer } from './store/app.reducer';
 import { AppEffects } from './store/app.effects';
+import { AdminDashboardComponent } from './pages/admin/components/admin-dashboard/admin-dashboard.component';
+import { AdminProductsComponent } from './pages/admin/components/admin-products/admin-products.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { AppEffects } from './store/app.effects';
     CartComponent,
     MainComponent,
     ShopComponent,
+    AdminDashboardComponent,
+    AdminProductsComponent,
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,7 @@ import {
   resetCart,
 } from './store/app.actions';
 import { Item, ItemState } from './model/app.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,10 @@ import { Item, ItemState } from './model/app.model';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  constructor(private store: Store<{ items: ItemState }>) {}
+  constructor(
+    private store: Store<{ items: ItemState }>,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
     this.store.dispatch(loadItems());
