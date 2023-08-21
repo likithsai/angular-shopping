@@ -22,7 +22,7 @@ export const appReducer = createReducer(
   initialItemState,
   on(AppActions.loadItemsSuccess, (state, { items }) => ({
     ...state,
-    items,
+    productItems: items,
   })),
 
   //  cart items

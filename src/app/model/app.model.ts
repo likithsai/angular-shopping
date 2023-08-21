@@ -20,6 +20,6 @@ export interface cart {
 }
 
 export interface ItemState {
-  items: Item[];
+  productItems: Item[];
   cart: cart;
 }

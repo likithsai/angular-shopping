@@ -15,7 +15,7 @@ export class AdminProductsComponent {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
     this.store
-      .select((state) => state.items)
+      .select((state) => state.items.productItems)
       .subscribe((items) => {
         this.productItems = items;
       });
