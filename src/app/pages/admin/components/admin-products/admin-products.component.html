@@ -1,1 +1,21 @@
+<div class="flex flex-col gap-3">
+<div class="flex w-full items-center justify-between">
+  <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded">
+    <i class="bi bi-plus-lg pr-2"></i>
+    <span>Add Product</span>
+  </button>
+</div>
+
+<div class="flex gap-3">
+  <div class="bg-white shadow rounded-lg p-8 2xl:col-span-2 w-full text-center">
+    <div class="flex items-center justify-between w-full">
+      <div class="flex-shrink-0 w-full">
+          <h3 class="text-base font-normal text-gray-500">Total Products</h3>
+          <span class="text-2xl sm:text-3xl leading-none font-bold text-gray-900">{{ productItems.length }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 <p>{{ productItems | json }}</p>
+</div>
