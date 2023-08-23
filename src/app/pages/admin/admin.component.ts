@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Item, ItemState } from 'src/app/model/app.model';
+import { Item, ItemState, ProductCategory } from 'src/app/model/app.model';
 
 @Component({
   selector: 'app-admin',
@@ -8,14 +8,17 @@ import { Item, ItemState } from 'src/app/model/app.model';
   styleUrls: ['./admin.component.scss'],
 })
 export class AdminComponent {
-  productItems$: Item[] = [];
+  productItems: Item[] = [];
+  categoryItems: ProductCategory[] = [];
+
   constructor(private store: Store<{ items: ItemState }>) {}
 
   ngOnInit(): void {
     this.store
-      .select((state) => state.items.productItems)
+      .select((state) => state.items)
       .subscribe((items) => {
-        this.productItems$ = items;
+        this.productItems = items.productItems;
+        this.categoryItems = items.productCategory;
       });
   }
 }

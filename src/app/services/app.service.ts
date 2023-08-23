@@ -1,7 +1,7 @@
 import { BehaviorSubject, Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Item } from '../model/app.model';
+import { Item, ItemState } from '../model/app.model';
 
 @Injectable({
   providedIn: 'root',
@@ -14,7 +14,8 @@ export class appService {
 
   constructor(private http: HttpClient) {}
 
-  loadItems(): Observable<Item[]> {
-    return this.http.get<Item[]>(this.itemsUrl);
+  loadItems(): Observable<ItemState> {
+    console.log(this.http.get<ItemState>(this.itemsUrl));
+    return this.http.get<ItemState>(this.itemsUrl);
   }
 }

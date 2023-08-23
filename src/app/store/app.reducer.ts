@@ -22,7 +22,8 @@ export const appReducer = createReducer(
   initialItemState,
   on(AppActions.loadItemsSuccess, (state, { items }) => ({
     ...state,
-    productItems: items,
+    productCategory: items.productCategory,
+    productItems: items.productItems,
   })),
 
   //  cart items

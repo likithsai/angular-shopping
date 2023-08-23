@@ -7,6 +7,7 @@ import { MainComponent } from './pages/main/main.component';
 import { ShopComponent } from './pages/shop/shop.component';
 import { AdminDashboardComponent } from './pages/admin/components/admin-dashboard/admin-dashboard.component';
 import { AdminProductsComponent } from './pages/admin/components/admin-products/admin-products.component';
+import { AdminCategoriesComponent } from './pages/admin/components/admin-categories/admin-categories.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
       { path: '', component: AdminDashboardComponent },
       { path: 'dashboard', component: AdminDashboardComponent },
       { path: 'products', component: AdminProductsComponent },
+      { path: 'categories', component: AdminCategoriesComponent },
     ],
   },
   { path: 'cart', component: CartComponent },

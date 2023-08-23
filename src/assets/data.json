@@ -1,226 +1,234 @@
-[
-  {
-    "itemid": "SKU1948750",
-    "itemname": "fancy product",
-    "itemdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi ultrices nunc blandit suscipit.",
-    "itemimages": [
-      {
-        "imageurl": "https://www.oskargydell.com/wp-content/uploads/2017/08/Product-image-600x600-leather-Red-PVD.png",
-        "imagealt": "simple image"
-      },
-      {
-        "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
-        "imagealt": "simple image"
-      },
-      {
-        "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
-        "imagealt": "simple image"
-      },
-      {
-        "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
-        "imagealt": "simple image"
-      }
-    ],
-    "itemcategoryname": [
-      { "productname": "software", "producticon": "bi bi-1-circle-fill" },
-      {
-        "productname": "Hardware",
-        "producticon": "bi bi-arrow-down-left-circle-fill"
-      }
-    ],
-    "itemnewprice": 18.0,
-    "itemoldprice": 20.0
-  },
-  {
-    "itemid": "SKU1948750",
-    "itemname": "fancy product",
-    "itemdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi ultrices nunc blandit suscipit.",
-    "itemimages": [
-      {
-        "imageurl": "https://www.oskargydell.com/wp-content/uploads/2017/08/Product-image-600x600-leather-Red-PVD.png",
-        "imagealt": "simple image"
-      },
-      {
-        "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
-        "imagealt": "simple image"
-      },
-      {
-        "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
-        "imagealt": "simple image"
-      },
-      {
-        "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
-        "imagealt": "simple image"
-      }
-    ],
-    "itemcategoryname": [
-      { "productname": "software", "producticon": "bi bi-1-circle-fill" },
-      {
-        "productname": "Hardware",
-        "producticon": "bi bi-arrow-down-left-circle-fill"
-      }
-    ],
-    "itemnewprice": 18.0,
-    "itemoldprice": 20.0
-  },
-  {
-    "itemid": "SKU1948750",
-    "itemname": "fancy product",
-    "itemdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi ultrices nunc blandit suscipit.",
-    "itemimages": [
-      {
-        "imageurl": "https://www.oskargydell.com/wp-content/uploads/2017/08/Product-image-600x600-leather-Red-PVD.png",
-        "imagealt": "simple image"
-      },
-      {
-        "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
-        "imagealt": "simple image"
-      },
-      {
-        "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
-        "imagealt": "simple image"
-      },
-      {
-        "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
-        "imagealt": "simple image"
-      }
-    ],
-    "itemcategoryname": [
-      { "productname": "software", "producticon": "bi bi-1-circle-fill" },
-      {
-        "productname": "Hardware",
-        "producticon": "bi bi-arrow-down-left-circle-fill"
-      }
-    ],
-    "itemnewprice": 18.0,
-    "itemoldprice": 20.0
-  },
-  {
-    "itemid": "SKU1948750",
-    "itemname": "fancy product",
-    "itemdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi ultrices nunc blandit suscipit.",
-    "itemimages": [
-      {
-        "imageurl": "https://www.oskargydell.com/wp-content/uploads/2017/08/Product-image-600x600-leather-Red-PVD.png",
-        "imagealt": "simple image"
-      },
-      {
-        "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
-        "imagealt": "simple image"
-      },
-      {
-        "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
-        "imagealt": "simple image"
-      },
-      {
-        "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
-        "imagealt": "simple image"
-      }
-    ],
-    "itemcategoryname": [
-      { "productname": "software", "producticon": "bi bi-1-circle-fill" },
-      {
-        "productname": "Hardware",
-        "producticon": "bi bi-arrow-down-left-circle-fill"
-      }
-    ],
-    "itemnewprice": 18.0,
-    "itemoldprice": 20.0
-  },
-  {
-    "itemid": "SKU1948750",
-    "itemname": "fancy product",
-    "itemdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi ultrices nunc blandit suscipit.",
-    "itemimages": [
-      {
-        "imageurl": "https://www.oskargydell.com/wp-content/uploads/2017/08/Product-image-600x600-leather-Red-PVD.png",
-        "imagealt": "simple image"
-      },
-      {
-        "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
-        "imagealt": "simple image"
-      },
-      {
-        "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
-        "imagealt": "simple image"
-      },
-      {
-        "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
-        "imagealt": "simple image"
-      }
-    ],
-    "itemcategoryname": [
-      { "productname": "software", "producticon": "bi bi-1-circle-fill" },
-      {
-        "productname": "Hardware",
-        "producticon": "bi bi-arrow-down-left-circle-fill"
-      }
-    ],
-    "itemnewprice": 18.0,
-    "itemoldprice": 20.0
-  },
-  {
-    "itemid": "SKU1948750",
-    "itemname": "fancy product",
-    "itemdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi ultrices nunc blandit suscipit.",
-    "itemimages": [
-      {
-        "imageurl": "https://www.oskargydell.com/wp-content/uploads/2017/08/Product-image-600x600-leather-Red-PVD.png",
-        "imagealt": "simple image"
-      },
-      {
-        "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
-        "imagealt": "simple image"
-      },
-      {
-        "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
-        "imagealt": "simple image"
-      },
-      {
-        "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
-        "imagealt": "simple image"
-      }
-    ],
-    "itemcategoryname": [
-      { "productname": "software", "producticon": "bi bi-1-circle-fill" },
-      {
-        "productname": "Hardware",
-        "producticon": "bi bi-arrow-down-left-circle-fill"
-      }
-    ],
-    "itemnewprice": 18.0,
-    "itemoldprice": 20.0
-  },
-  {
-    "itemid": "SKU1948750",
-    "itemname": "fancy product",
-    "itemdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi ultrices nunc blandit suscipit.",
-    "itemimages": [
-      {
-        "imageurl": "https://www.oskargydell.com/wp-content/uploads/2017/08/Product-image-600x600-leather-Red-PVD.png",
-        "imagealt": "simple image"
-      },
-      {
-        "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
-        "imagealt": "simple image"
-      },
-      {
-        "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
-        "imagealt": "simple image"
-      },
-      {
-        "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
-        "imagealt": "simple image"
-      }
-    ],
-    "itemcategoryname": [
-      { "productname": "software", "producticon": "bi bi-1-circle-fill" },
-      {
-        "productname": "Hardware",
-        "producticon": "bi bi-arrow-down-left-circle-fill"
-      }
-    ],
-    "itemnewprice": 18.0,
-    "itemoldprice": 20.0
-  }
-]
+{
+  "productCategory": [
+    {
+      "categoryname": "software",
+      "categoryicon": "bi bi-arrow-down-left-circle-fill"
+    }
+  ],
+  "productItems": [
+    {
+      "itemid": "SKU1948750",
+      "itemname": "fancy product",
+      "itemdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi ultrices nunc blandit suscipit.",
+      "itemimages": [
+        {
+          "imageurl": "https://www.oskargydell.com/wp-content/uploads/2017/08/Product-image-600x600-leather-Red-PVD.png",
+          "imagealt": "simple image"
+        },
+        {
+          "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
+          "imagealt": "simple image"
+        },
+        {
+          "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
+          "imagealt": "simple image"
+        },
+        {
+          "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
+          "imagealt": "simple image"
+        }
+      ],
+      "itemcategoryname": [
+        { "productname": "software", "producticon": "bi bi-1-circle-fill" },
+        {
+          "productname": "Hardware",
+          "producticon": "bi bi-arrow-down-left-circle-fill"
+        }
+      ],
+      "itemnewprice": 18.0,
+      "itemoldprice": 20.0
+    },
+    {
+      "itemid": "SKU1948750",
+      "itemname": "fancy product",
+      "itemdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi ultrices nunc blandit suscipit.",
+      "itemimages": [
+        {
+          "imageurl": "https://www.oskargydell.com/wp-content/uploads/2017/08/Product-image-600x600-leather-Red-PVD.png",
+          "imagealt": "simple image"
+        },
+        {
+          "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
+          "imagealt": "simple image"
+        },
+        {
+          "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
+          "imagealt": "simple image"
+        },
+        {
+          "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
+          "imagealt": "simple image"
+        }
+      ],
+      "itemcategoryname": [
+        { "productname": "software", "producticon": "bi bi-1-circle-fill" },
+        {
+          "productname": "Hardware",
+          "producticon": "bi bi-arrow-down-left-circle-fill"
+        }
+      ],
+      "itemnewprice": 18.0,
+      "itemoldprice": 20.0
+    },
+    {
+      "itemid": "SKU1948750",
+      "itemname": "fancy product",
+      "itemdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi ultrices nunc blandit suscipit.",
+      "itemimages": [
+        {
+          "imageurl": "https://www.oskargydell.com/wp-content/uploads/2017/08/Product-image-600x600-leather-Red-PVD.png",
+          "imagealt": "simple image"
+        },
+        {
+          "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
+          "imagealt": "simple image"
+        },
+        {
+          "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
+          "imagealt": "simple image"
+        },
+        {
+          "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
+          "imagealt": "simple image"
+        }
+      ],
+      "itemcategoryname": [
+        { "productname": "software", "producticon": "bi bi-1-circle-fill" },
+        {
+          "productname": "Hardware",
+          "producticon": "bi bi-arrow-down-left-circle-fill"
+        }
+      ],
+      "itemnewprice": 18.0,
+      "itemoldprice": 20.0
+    },
+    {
+      "itemid": "SKU1948750",
+      "itemname": "fancy product",
+      "itemdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi ultrices nunc blandit suscipit.",
+      "itemimages": [
+        {
+          "imageurl": "https://www.oskargydell.com/wp-content/uploads/2017/08/Product-image-600x600-leather-Red-PVD.png",
+          "imagealt": "simple image"
+        },
+        {
+          "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
+          "imagealt": "simple image"
+        },
+        {
+          "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
+          "imagealt": "simple image"
+        },
+        {
+          "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
+          "imagealt": "simple image"
+        }
+      ],
+      "itemcategoryname": [
+        { "productname": "software", "producticon": "bi bi-1-circle-fill" },
+        {
+          "productname": "Hardware",
+          "producticon": "bi bi-arrow-down-left-circle-fill"
+        }
+      ],
+      "itemnewprice": 18.0,
+      "itemoldprice": 20.0
+    },
+    {
+      "itemid": "SKU1948750",
+      "itemname": "fancy product",
+      "itemdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi ultrices nunc blandit suscipit.",
+      "itemimages": [
+        {
+          "imageurl": "https://www.oskargydell.com/wp-content/uploads/2017/08/Product-image-600x600-leather-Red-PVD.png",
+          "imagealt": "simple image"
+        },
+        {
+          "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
+          "imagealt": "simple image"
+        },
+        {
+          "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
+          "imagealt": "simple image"
+        },
+        {
+          "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
+          "imagealt": "simple image"
+        }
+      ],
+      "itemcategoryname": [
+        { "productname": "software", "producticon": "bi bi-1-circle-fill" },
+        {
+          "productname": "Hardware",
+          "producticon": "bi bi-arrow-down-left-circle-fill"
+        }
+      ],
+      "itemnewprice": 18.0,
+      "itemoldprice": 20.0
+    },
+    {
+      "itemid": "SKU1948750",
+      "itemname": "fancy product",
+      "itemdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi ultrices nunc blandit suscipit.",
+      "itemimages": [
+        {
+          "imageurl": "https://www.oskargydell.com/wp-content/uploads/2017/08/Product-image-600x600-leather-Red-PVD.png",
+          "imagealt": "simple image"
+        },
+        {
+          "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
+          "imagealt": "simple image"
+        },
+        {
+          "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
+          "imagealt": "simple image"
+        },
+        {
+          "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
+          "imagealt": "simple image"
+        }
+      ],
+      "itemcategoryname": [
+        { "productname": "software", "producticon": "bi bi-1-circle-fill" },
+        {
+          "productname": "Hardware",
+          "producticon": "bi bi-arrow-down-left-circle-fill"
+        }
+      ],
+      "itemnewprice": 18.0,
+      "itemoldprice": 20.0
+    },
+    {
+      "itemid": "SKU1948750",
+      "itemname": "fancy product",
+      "itemdesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi ultrices nunc blandit suscipit.",
+      "itemimages": [
+        {
+          "imageurl": "https://www.oskargydell.com/wp-content/uploads/2017/08/Product-image-600x600-leather-Red-PVD.png",
+          "imagealt": "simple image"
+        },
+        {
+          "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
+          "imagealt": "simple image"
+        },
+        {
+          "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
+          "imagealt": "simple image"
+        },
+        {
+          "imageurl": "https://dummyimage.com/600x600/dee2e6/6c757d.jpg",
+          "imagealt": "simple image"
+        }
+      ],
+      "itemcategoryname": [
+        { "productname": "software", "producticon": "bi bi-1-circle-fill" },
+        {
+          "productname": "Hardware",
+          "producticon": "bi bi-arrow-down-left-circle-fill"
+        }
+      ],
+      "itemnewprice": 18.0,
+      "itemoldprice": 20.0
+    }
+  ]
+}

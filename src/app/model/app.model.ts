@@ -3,13 +3,13 @@ export interface Item {
   itemname: string;
   itemdesc: string;
   itemimages?: productImages[];
-  itemcategory: productCategory[];
+  itemcategory: ProductCategory[];
   itemnewprice: number;
   itemoldprice: number;
   itemfilepath: string;
 }
 
-export interface productCategory {
+export interface ProductCategory {
   productname: string;
   producticon: string;
 }
@@ -24,6 +24,7 @@ export interface cart {
 }
 
 export interface ItemState {
+  productCategory: ProductCategory[];
   productItems: Item[];
   cart: cart;
 }
