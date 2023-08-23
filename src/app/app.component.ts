@@ -28,7 +28,13 @@ export class AppComponent {
       itemname: 'fancy product',
       itemdesc:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi ultrices nunc blandit suscipit.',
-      itemcategoryname: 'software',
+      itemcategory: [
+        { productname: 'software', producticon: 'bi bi-1-circle-fill' },
+        {
+          productname: 'Hardware',
+          producticon: 'bi bi-arrow-down-left-circle-fill',
+        },
+      ],
       itemnewprice: 18.65,
       itemoldprice: 20.0,
       itemfilepath: '',
@@ -39,7 +45,13 @@ export class AppComponent {
       itemname: 'fancy product',
       itemdesc:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi ultrices nunc blandit suscipit.',
-      itemcategoryname: 'software',
+      itemcategory: [
+        { productname: 'software', producticon: 'bi bi-1-circle-fill' },
+        {
+          productname: 'Hardware',
+          producticon: 'bi bi-arrow-down-left-circle-fill',
+        },
+      ],
       itemnewprice: 18.82,
       itemoldprice: 20.0,
       itemfilepath: '',

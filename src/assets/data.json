@@ -21,7 +21,13 @@
         "imagealt": "simple image"
       }
     ],
-    "itemcategoryname": "software",
+    "itemcategoryname": [
+      { "productname": "software", "producticon": "bi bi-1-circle-fill" },
+      {
+        "productname": "Hardware",
+        "producticon": "bi bi-arrow-down-left-circle-fill"
+      }
+    ],
     "itemnewprice": 18.0,
     "itemoldprice": 20.0
   },
@@ -47,7 +53,13 @@
         "imagealt": "simple image"
       }
     ],
-    "itemcategoryname": "software",
+    "itemcategoryname": [
+      { "productname": "software", "producticon": "bi bi-1-circle-fill" },
+      {
+        "productname": "Hardware",
+        "producticon": "bi bi-arrow-down-left-circle-fill"
+      }
+    ],
     "itemnewprice": 18.0,
     "itemoldprice": 20.0
   },
@@ -73,7 +85,13 @@
         "imagealt": "simple image"
       }
     ],
-    "itemcategoryname": "software",
+    "itemcategoryname": [
+      { "productname": "software", "producticon": "bi bi-1-circle-fill" },
+      {
+        "productname": "Hardware",
+        "producticon": "bi bi-arrow-down-left-circle-fill"
+      }
+    ],
     "itemnewprice": 18.0,
     "itemoldprice": 20.0
   },
@@ -99,7 +117,13 @@
         "imagealt": "simple image"
       }
     ],
-    "itemcategoryname": "software",
+    "itemcategoryname": [
+      { "productname": "software", "producticon": "bi bi-1-circle-fill" },
+      {
+        "productname": "Hardware",
+        "producticon": "bi bi-arrow-down-left-circle-fill"
+      }
+    ],
     "itemnewprice": 18.0,
     "itemoldprice": 20.0
   },
@@ -125,7 +149,13 @@
         "imagealt": "simple image"
       }
     ],
-    "itemcategoryname": "software",
+    "itemcategoryname": [
+      { "productname": "software", "producticon": "bi bi-1-circle-fill" },
+      {
+        "productname": "Hardware",
+        "producticon": "bi bi-arrow-down-left-circle-fill"
+      }
+    ],
     "itemnewprice": 18.0,
     "itemoldprice": 20.0
   },
@@ -151,7 +181,13 @@
         "imagealt": "simple image"
       }
     ],
-    "itemcategoryname": "software",
+    "itemcategoryname": [
+      { "productname": "software", "producticon": "bi bi-1-circle-fill" },
+      {
+        "productname": "Hardware",
+        "producticon": "bi bi-arrow-down-left-circle-fill"
+      }
+    ],
     "itemnewprice": 18.0,
     "itemoldprice": 20.0
   },
@@ -177,7 +213,13 @@
         "imagealt": "simple image"
       }
     ],
-    "itemcategoryname": "software",
+    "itemcategoryname": [
+      { "productname": "software", "producticon": "bi bi-1-circle-fill" },
+      {
+        "productname": "Hardware",
+        "producticon": "bi bi-arrow-down-left-circle-fill"
+      }
+    ],
     "itemnewprice": 18.0,
     "itemoldprice": 20.0
   }
