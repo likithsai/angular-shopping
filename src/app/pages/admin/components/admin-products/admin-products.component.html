@@ -1,29 +1,51 @@
 <div class="flex flex-col gap-3">
-  <div class="sticky top-0 gap-3 flex flex-col">
-    <div class="flex w-full items-center justify-start gap-2">
-      <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded">
+  <!-- <div class="gap-3 flex flex-col">
+    <div class="flex w-full items-center justify-between gap-2">
+      <button
+        class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded"
+      >
         <i class="bi bi-plus-lg pr-2"></i>
         <span>Add Product</span>
       </button>
-
-      <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded">
-        <i class="bi bi-download pr-2"></i>
-        <span>Download JSON</span>
-      </button>
     </div>
+  </div> -->
 
-    <div class="flex gap-3">
-      <div class="bg-white shadow rounded-lg p-8 2xl:col-span-2 w-full text-center">
-        <div class="flex items-center justify-between w-full">
-          <div class="flex-shrink-0 w-full">
-              <h3 class="text-base font-normal text-gray-500">Total Products</h3>
-              <span class="text-2xl sm:text-3xl leading-none font-bold text-gray-900">{{ productItems$.length }}</span>
+  <div class="grid gap-3">
+    <div
+      class="bg-white shadow rounded-lg p-8 2xl:col-span-2 w-full"
+      *ngFor="let post of productItems$"
+    >
+      <div class="flex flex-col w-full gap-4">
+        <div class="flex-shrink-0 w-full">
+          <div class="flex items-center justify-between gap-3">
+            <div class="gap-2">
+              <p class="font-bold text-xl">{{ post.itemname }}</p>
+              <p>{{ post.itemdesc }}</p>
+            </div>
+            <div class="flex flex-col">
+              <div
+                class="inline-flex items-center text-base font-semibold text-gray-900"
+              >
+                {{ post.itemnewprice }}
+              </div>
+            </div>
           </div>
+        </div>
+        <div class="flex items-center justify-start gap-2">
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded"
+          >
+            <i class="bi bi-pencil-square pr-2"></i>
+            <span>Edit</span>
+          </button>
+          <button
+            class="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded"
+          >
+            <i class="bi bi-x-lg pr-2"></i>
+            <span>Delete</span>
+          </button>
         </div>
       </div>
     </div>
   </div>
-
-  <p *ngFor="let post of productItems$">{{ post | json }}</p>
-
 </div>
