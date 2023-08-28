@@ -14,7 +14,7 @@ export class AppEffects {
       mergeMap(() =>
         this.itemService.loadItems().pipe(
           map((items) => {
-            console.log('Response:', items); // Log the response data
+            // console.log('Response:', items); // Log the response data
             return ItemActions.loadItemsSuccess({
               items: {
                 productCategory: items.productCategory,

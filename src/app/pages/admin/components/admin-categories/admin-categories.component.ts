@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Store } from '@ngrx/store';
-import { ItemState, ProductCategory } from 'src/app/model/app.model';
+import { Router } from '@angular/router';
+import { ProductCategory } from 'src/app/model/app.model';
 
 @Component({
   selector: 'app-admin-categories',
@@ -9,14 +9,11 @@ import { ItemState, ProductCategory } from 'src/app/model/app.model';
 })
 export class AdminCategoriesComponent {
   productCategories: ProductCategory[] = [];
-  constructor(private store: Store<{ items: ItemState }>) {}
 
-  ngOnInit(): void {
-    this.store
-      .select((state) => state.items.productCategory)
-      .subscribe((items) => {
-        console.log(items);
-        this.productCategories = items;
-      });
+  constructor(private router: Router) {
+    this.productCategories = this.router.getCurrentNavigation()?.extras
+      .state as ProductCategory[];
   }
+
+  ngOnInit(): void {}
 }
