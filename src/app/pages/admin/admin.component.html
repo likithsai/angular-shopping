@@ -67,11 +67,12 @@
               <li>
                 <a
                   [routerLink]="['dashboard']"
-                  [state]="{ id: 1, name: 'Angular' }"
-                  class="text-base text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group"
+                  [routerLinkActive]="['bg-blue-500']"
+                  [routerLinkActiveOptions]="{exact: true}"
+                  class="text-base text-gray-900 font-normal rounded-lg flex items-center p-2 group"
                 >
                   <svg
-                    class="w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"
+                    class="w-6 h-6 text-gray-500 transition duration-75"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
@@ -88,11 +89,12 @@
                 <a
                   [routerLink]="['products']"
                   [state]="productItems"
-                  [routerLinkActive]="['is-active', 'font-bold']"
-                  class="text-base text-gray-900 font-normal rounded-lg hover:bg-gray-100 flex items-center p-2 group"
+                  [routerLinkActive]="['bg-blue-500']"
+                  [routerLinkActiveOptions]="{exact: true}"
+                  class="text-base text-gray-900 font-normal rounded-lg flex items-center p-2 group"
                 >
                   <svg
-                    class="w-6 h-6 text-gray-500 flex-shrink-0 group-hover:text-gray-900 transition duration-75"
+                    class="w-6 h-6 text-gray-500 flex-shrink-0 transition duration-75"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
@@ -114,11 +116,12 @@
                 <a
                   [routerLink]="['categories']"
                   [state]="categoryItems"
-                  routerLinkActive="font-bold"
-                  class="text-base text-gray-900 font-normal rounded-lg hover:bg-gray-100 flex items-center p-2 group"
+                  [routerLinkActive]="['bg-blue-500']"
+                  [routerLinkActiveOptions]="{exact: true}"
+                  class="text-base text-gray-900 font-normal rounded-lg flex items-center p-2 group"
                 >
                   <svg
-                    class="w-6 h-6 text-gray-500 flex-shrink-0 group-hover:text-gray-900 transition duration-75"
+                    class="w-6 h-6 text-gray-500 flex-shrink-0 transition duration-75"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
