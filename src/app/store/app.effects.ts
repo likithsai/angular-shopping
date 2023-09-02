@@ -32,4 +32,31 @@ export class AppEffects {
       )
     )
   );
+
+  loadAdminItems$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(ItemActions.loadAdminItems),
+      mergeMap(() =>
+        this.itemService.loadItems().pipe(
+          map((items) => {
+            console.log('Response:', items); // Log the response data
+            return ItemActions.loadAdminItemsSuccess({
+              items: {
+                productCategory: items.productCategory,
+                productItems: items.productItems,
+                cart: {
+                  items: [],
+                  totalamt: 0,
+                  itemcount: 0,
+                },
+              },
+            });
+          }),
+          catchError((error) =>
+            of(ItemActions.loadAdminItemsFailure({ error }))
+          )
+        )
+      )
+    )
+  );
 }

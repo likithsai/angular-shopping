@@ -1,6 +1,6 @@
 import { createReducer, on } from '@ngrx/store';
 import * as AppActions from './app.actions';
-import { initialItemState } from './app.state';
+import { adminItemsState, initialItemState } from './app.state';
 import { Item } from '../model/app.model';
 
 const updatecartItem = (state: any, items: Item[]) => {
@@ -17,6 +17,25 @@ const updatecartItem = (state: any, items: Item[]) => {
     },
   };
 };
+
+export const adminReducer = createReducer(
+  adminItemsState,
+  on(AppActions.loadAdminItemsSuccess, (state, { items }) => ({
+    ...state,
+    productCategory: items.productCategory,
+    productItems: items.productItems,
+  })),
+  on(AppActions.adminSaveEnabled, (state, { status }) => ({
+    ...state,
+    admin: {
+      isSaveEnabled: status,
+    },
+  })),
+  on(AppActions.addProduct, (state, { items }) => ({
+    ...state,
+    items,
+  }))
+);
 
 export const appReducer = createReducer(
   initialItemState,

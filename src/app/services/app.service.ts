@@ -15,7 +15,6 @@ export class appService {
   constructor(private http: HttpClient) {}
 
   loadItems(): Observable<ItemState> {
-    console.log(this.http.get<ItemState>(this.itemsUrl));
     return this.http.get<ItemState>(this.itemsUrl);
   }
 }

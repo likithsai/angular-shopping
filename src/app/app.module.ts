@@ -10,7 +10,7 @@ import { ShopComponent } from './pages/shop/shop.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
-import { appReducer } from './store/app.reducer';
+import { adminReducer, appReducer } from './store/app.reducer';
 import { AppEffects } from './store/app.effects';
 import { AdminDashboardComponent } from './pages/admin/components/admin-dashboard/admin-dashboard.component';
 import { AdminProductsComponent } from './pages/admin/components/admin-products/admin-products.component';
@@ -32,7 +32,7 @@ import { AdminCategoriesComponent } from './pages/admin/components/admin-categor
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    StoreModule.forRoot({ items: appReducer }),
+    StoreModule.forRoot({ items: appReducer, admin: adminReducer }),
     EffectsModule.forRoot([AppEffects]),
   ],
   providers: [],

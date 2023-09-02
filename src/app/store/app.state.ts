@@ -1,4 +1,4 @@
-import { ItemState } from '../model/app.model';
+import { AdminItemState, ItemState } from '../model/app.model';
 
 export const initialItemState: ItemState = {
   productCategory: [],
@@ -8,4 +8,10 @@ export const initialItemState: ItemState = {
     totalamt: 0,
     itemcount: 0,
   },
+};
+
+export const adminItemsState: AdminItemState = {
+  productCategory: [],
+  productItems: [],
+  isSaveEnabled: false,
 };

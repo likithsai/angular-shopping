@@ -23,8 +23,18 @@ export interface cart {
   itemcount: number;
 }
 
+export type adminItems = {
+  isSaveEnabled: boolean;
+};
+
 export interface ItemState {
   productCategory: ProductCategory[];
   productItems: Item[];
   cart: cart;
+}
+
+export interface AdminItemState {
+  isSaveEnabled: boolean;
+  productCategory: ProductCategory[];
+  productItems: Item[];
 }
