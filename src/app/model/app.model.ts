@@ -3,10 +3,9 @@ export interface Item {
   itemname: string;
   itemdesc: string;
   itemimages?: productImages[];
-  itemcategory: ProductCategory[];
+  itemcategory?: ProductCategory[];
   itemnewprice: number;
   itemoldprice: number;
-  itemfilepath: string;
 }
 
 export interface ProductCategory {

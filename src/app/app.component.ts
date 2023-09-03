@@ -37,7 +37,6 @@ export class AppComponent {
       ],
       itemnewprice: 18.65,
       itemoldprice: 20.0,
-      itemfilepath: '',
     });
 
     this.addToCart({
@@ -54,7 +53,6 @@ export class AppComponent {
       ],
       itemnewprice: 18.82,
       itemoldprice: 20.0,
-      itemfilepath: '',
     });
   }
 

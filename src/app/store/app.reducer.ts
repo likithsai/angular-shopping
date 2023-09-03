@@ -27,13 +27,15 @@ export const adminReducer = createReducer(
   })),
   on(AppActions.adminSaveEnabled, (state, { status }) => ({
     ...state,
-    admin: {
-      isSaveEnabled: status,
-    },
+    isSaveEnabled: status,
   })),
   on(AppActions.addProduct, (state, { items }) => ({
     ...state,
-    items,
+    productItems: [...state.productItems, items],
+  })),
+  on(AppActions.addProductCategory, (state, { category }) => ({
+    ...state,
+    productCategory: [...state.productCategory, category],
   }))
 );
 
