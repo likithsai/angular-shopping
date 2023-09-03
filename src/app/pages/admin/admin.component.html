@@ -15,9 +15,9 @@
             <span class="self-center whitespace-nowrap">Angular Shopping</span>
           </a>
 
-          <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded uppercase">
+          <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded uppercase" *ngIf="isSaveEnabled$ | async">
             <i class="bi bi-save2 mr-2"></i>
-            Save {{ isSaveEnabled$ | async }}
+            <span>Save</span>
           </button>
 
           <button

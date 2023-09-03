@@ -57,7 +57,7 @@ export const addProductCategory = createAction(
 
 export const removeProductCategory = createAction(
   '[admin] remove product category',
-  props<{ categoryId: string }>()
+  props<{ categoryName: string }>()
 );
 
 export const resetCart = createAction('[Cart] Clear from cart');

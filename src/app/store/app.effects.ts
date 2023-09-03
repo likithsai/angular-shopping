@@ -1,7 +1,16 @@
 import { Item } from 'src/app/model/app.model';
 import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { catchError, map, mapTo, mergeMap, of, switchMap, tap } from 'rxjs';
+import {
+  catchError,
+  map,
+  mapTo,
+  merge,
+  mergeMap,
+  of,
+  switchMap,
+  tap,
+} from 'rxjs';
 import { appService } from './../services/app.service';
 import * as ItemActions from './app.actions';
 
@@ -71,9 +80,12 @@ export class AppEffects {
           ItemActions.addProductCategory,
           ItemActions.removeProductCategory
         ),
-        map(() => {
-          console.log('Action called');
-          return of(ItemActions.adminSaveEnabled({ status: true }));
+        mergeMap(() => {
+          console.log('action called ....');
+          return [
+            ItemActions.adminSaveEnabled({ status: true }),
+            ItemActions.loadAdminItems(),
+          ];
         })
       ),
     { dispatch: false }

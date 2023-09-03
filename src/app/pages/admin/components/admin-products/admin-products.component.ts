@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { Item } from 'src/app/model/app.model';
-import { addProduct } from 'src/app/store/app.actions';
+import { addProduct, adminSaveEnabled } from 'src/app/store/app.actions';
 @Component({
   selector: 'app-admin-products',
   templateUrl: './admin-products.component.html',
@@ -19,6 +19,7 @@ export class AdminProductsComponent {
   ngOnInit(): void {}
 
   addNewProduct() {
+    this.store.dispatch(adminSaveEnabled({ status: true }));
     this.store.dispatch(
       addProduct({
         items: {

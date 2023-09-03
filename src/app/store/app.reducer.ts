@@ -1,3 +1,4 @@
+import { ItemState } from 'src/app/model/app.model';
 import { createReducer, on } from '@ngrx/store';
 import * as AppActions from './app.actions';
 import { adminItemsState, initialItemState } from './app.state';
@@ -36,7 +37,17 @@ export const adminReducer = createReducer(
   on(AppActions.addProductCategory, (state, { category }) => ({
     ...state,
     productCategory: [...state.productCategory, category],
-  }))
+  })),
+  on(AppActions.removeProduct, (state, { productId }) => {
+    const items = state.productItems.filter((itm) => itm.itemid !== productId);
+    return { ...state, productItems: items };
+  }),
+  on(AppActions.removeProductCategory, (state, { categoryName }) => {
+    const items = state.productCategory.filter(
+      (itm) => itm.productname !== categoryName
+    );
+    return { ...state, productCategory: items };
+  })
 );
 
 export const appReducer = createReducer(
