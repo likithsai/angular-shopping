@@ -15,6 +15,7 @@ import { AppEffects } from './store/app.effects';
 import { AdminDashboardComponent } from './pages/admin/components/admin-dashboard/admin-dashboard.component';
 import { AdminProductsComponent } from './pages/admin/components/admin-products/admin-products.component';
 import { AdminCategoriesComponent } from './pages/admin/components/admin-categories/admin-categories.component';
+import { AdminSettingsComponent } from './pages/admin/components/admin-settings/admin-settings.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AdminCategoriesComponent } from './pages/admin/components/admin-categor
     AdminDashboardComponent,
     AdminProductsComponent,
     AdminCategoriesComponent,
+    AdminSettingsComponent,
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,7 @@ import { ShopComponent } from './pages/shop/shop.component';
 import { AdminDashboardComponent } from './pages/admin/components/admin-dashboard/admin-dashboard.component';
 import { AdminProductsComponent } from './pages/admin/components/admin-products/admin-products.component';
 import { AdminCategoriesComponent } from './pages/admin/components/admin-categories/admin-categories.component';
+import { AdminSettingsComponent } from './pages/admin/components/admin-settings/admin-settings.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
       { path: 'dashboard', component: AdminDashboardComponent },
       { path: 'products', component: AdminProductsComponent },
       { path: 'categories', component: AdminCategoriesComponent },
+      { path: 'settings', component: AdminSettingsComponent },
     ],
   },
   { path: 'cart', component: CartComponent },
