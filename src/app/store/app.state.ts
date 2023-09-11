@@ -9,9 +9,3 @@ export const initialItemState: ItemState = {
     itemcount: 0,
   },
 };
-
-export const adminItemsState: AdminItemState = {
-  productCategory: [],
-  productItems: [],
-  isSaveEnabled: false,
-};

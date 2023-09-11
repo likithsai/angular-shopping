@@ -1,40 +1,30 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { AdminComponent } from './pages/admin/admin.component';
-import { ItemDetailComponent } from './pages/item-detail/item-detail.component';
-import { CartComponent } from './pages/cart/cart.component';
-import { MainComponent } from './pages/main/main.component';
-import { ShopComponent } from './pages/shop/shop.component';
-import { HttpClientModule } from '@angular/common/http';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
-import { adminReducer, appReducer } from './store/app.reducer';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { CartComponent } from './pages/cart/cart.component';
+import { ItemDetailComponent } from './pages/item-detail/item-detail.component';
+import { MainComponent } from './pages/main/main.component';
+import { ShopComponent } from './pages/shop/shop.component';
 import { AppEffects } from './store/app.effects';
-import { AdminDashboardComponent } from './pages/admin/components/admin-dashboard/admin-dashboard.component';
-import { AdminProductsComponent } from './pages/admin/components/admin-products/admin-products.component';
-import { AdminCategoriesComponent } from './pages/admin/components/admin-categories/admin-categories.component';
-import { AdminSettingsComponent } from './pages/admin/components/admin-settings/admin-settings.component';
+import { appReducer } from './store/app.reducer';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminComponent,
     ItemDetailComponent,
     CartComponent,
     MainComponent,
     ShopComponent,
-    AdminDashboardComponent,
-    AdminProductsComponent,
-    AdminCategoriesComponent,
-    AdminSettingsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    StoreModule.forRoot({ items: appReducer, admin: adminReducer }),
+    StoreModule.forRoot({ items: appReducer }),
     EffectsModule.forRoot([AppEffects]),
   ],
   providers: [],

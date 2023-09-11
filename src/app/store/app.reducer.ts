@@ -1,8 +1,7 @@
-import { ItemState } from 'src/app/model/app.model';
 import { createReducer, on } from '@ngrx/store';
-import * as AppActions from './app.actions';
-import { adminItemsState, initialItemState } from './app.state';
 import { Item } from '../model/app.model';
+import * as AppActions from './app.actions';
+import { initialItemState } from './app.state';
 
 const updatecartItem = (state: any, items: Item[]) => {
   const totalamt = items
@@ -18,37 +17,6 @@ const updatecartItem = (state: any, items: Item[]) => {
     },
   };
 };
-
-export const adminReducer = createReducer(
-  adminItemsState,
-  on(AppActions.loadAdminItemsSuccess, (state, { items }) => ({
-    ...state,
-    productCategory: items.productCategory,
-    productItems: items.productItems,
-  })),
-  on(AppActions.adminSaveEnabled, (state, { status }) => ({
-    ...state,
-    isSaveEnabled: status,
-  })),
-  on(AppActions.addProduct, (state, { items }) => ({
-    ...state,
-    productItems: [...state.productItems, items],
-  })),
-  on(AppActions.addProductCategory, (state, { category }) => ({
-    ...state,
-    productCategory: [...state.productCategory, category],
-  })),
-  on(AppActions.removeProduct, (state, { productId }) => {
-    const items = state.productItems.filter((itm) => itm.itemid !== productId);
-    return { ...state, productItems: items };
-  }),
-  on(AppActions.removeProductCategory, (state, { categoryName }) => {
-    const items = state.productCategory.filter(
-      (itm) => itm.productname !== categoryName
-    );
-    return { ...state, productCategory: items };
-  })
-);
 
 export const appReducer = createReducer(
   initialItemState,
