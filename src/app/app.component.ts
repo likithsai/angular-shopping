@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
+import { Item, ItemState } from './model/app.model';
 import {
   addToCart,
   loadItems,
   removeFromCart,
   resetCart,
 } from './store/app.actions';
-import { Item, ItemState } from './model/app.model';
-import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -15,12 +15,15 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  constructor(
-    private store: Store<{ items: ItemState }>,
-    private router: Router
-  ) {}
+  itemState$: Observable<ItemState> = this.store.select((state) => state.items);
+  itemProducts: any;
+  constructor(private store: Store<{ items: ItemState }>) {}
 
   ngOnInit(): void {
+    this.itemState$.subscribe((data: ItemState) => {
+      this.itemProducts = data;
+    });
+
     this.store.dispatch(loadItems());
 
     this.addToCart({

@@ -17,6 +17,7 @@ export class AppEffects {
             // console.log('Response:', items); // Log the response data
             return ItemActions.loadItemsSuccess({
               items: {
+                title: items.title,
                 productCategory: items.productCategory,
                 productItems: items.productItems,
                 cart: {

@@ -22,6 +22,7 @@ export const appReducer = createReducer(
   initialItemState,
   on(AppActions.loadItemsSuccess, (state, { items }) => ({
     ...state,
+    title: items.title,
     productCategory: items.productCategory,
     productItems: items.productItems,
   })),

@@ -27,6 +27,7 @@ export type adminItems = {
 };
 
 export interface ItemState {
+  title: string;
   productCategory: ProductCategory[];
   productItems: Item[];
   cart: cart;

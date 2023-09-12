@@ -11,7 +11,8 @@ import { MainComponent } from './pages/main/main.component';
 import { ShopComponent } from './pages/shop/shop.component';
 import { AppEffects } from './store/app.effects';
 import { appReducer } from './store/app.reducer';
-
+import { HeaderComponent } from './components/header/header.component';
+import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,8 +20,10 @@ import { appReducer } from './store/app.reducer';
     CartComponent,
     MainComponent,
     ShopComponent,
+    HeaderComponent,
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
