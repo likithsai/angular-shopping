@@ -13,6 +13,7 @@ import { AppEffects } from './store/app.effects';
 import { appReducer } from './store/app.reducer';
 import { HeaderComponent } from './components/header/header.component';
 import { CommonModule } from '@angular/common';
+import { FooterComponent } from './components/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,7 @@ import { CommonModule } from '@angular/common';
     MainComponent,
     ShopComponent,
     HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,

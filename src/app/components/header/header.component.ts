@@ -11,6 +11,7 @@ import { ItemState } from 'src/app/model/app.model';
 })
 export class HeaderComponent {
   @Input() title: string = '';
+  @Input() cartCount: string = '';
   constructor(private store: Store<{ items: ItemState }>) {}
 
   ngOnInit(): void {

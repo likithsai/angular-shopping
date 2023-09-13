@@ -41,22 +41,6 @@ export class AppComponent {
       itemnewprice: 18.65,
       itemoldprice: 20.0,
     });
-
-    this.addToCart({
-      itemid: 'SKU1948751',
-      itemname: 'fancy product',
-      itemdesc:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a mi ultrices nunc blandit suscipit.',
-      itemcategory: [
-        { productname: 'software', producticon: 'bi bi-1-circle-fill' },
-        {
-          productname: 'Hardware',
-          producticon: 'bi bi-arrow-down-left-circle-fill',
-        },
-      ],
-      itemnewprice: 18.82,
-      itemoldprice: 20.0,
-    });
   }
 
   addToCart(item: Item) {
